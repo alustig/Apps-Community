@@ -38,8 +38,7 @@
       set_fact:
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
-          - '{{path.stdout}}:{{path.stdout}}'
-          - '/tank/appdata/{{pgrole}}:/config'
+          - '/tank/appdata/{{pgrole}}:/var/lib/tiddlywiki'
           
     - name: 'Setting PG ENV'
       set_fact:
@@ -55,7 +54,7 @@
         image: '{{image}}'
         pull: yes
         published_ports:
-          - '{{ports.stdout}}{{extport}}:{{intport}}'
+          - '{{ports.stdout}}8383:8080'
         volumes: '{{pg_volumes}}'
         env: '{{pg_env}}'
         restart_policy: unless-stopped
