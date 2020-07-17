@@ -16,7 +16,7 @@
         pgrole: 'docuwiki'
         intport: '4245'
         extport: '443'
-        image: 'linuxserver/docuwiki '
+        image: 'linuxserver/docuwiki'
 
     - name: 'Including cron job'
       include_tasks: '/opt/communityapps/apps/_core.yml'
