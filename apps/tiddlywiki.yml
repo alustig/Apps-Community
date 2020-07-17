@@ -39,7 +39,7 @@
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
           - '{{path.stdout}}:{{path.stdout}}'
-          - '/tank/appdata/{{pgrole}}:/tiddlywiki'
+          - '/tank/appdata/{{pgrole}}:/config'
           
     - name: 'Setting PG ENV'
       set_fact:
