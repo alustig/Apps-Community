@@ -14,8 +14,8 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'dokuwiki'
-        intport: '4245'
-        extport: '443'
+        intport: '443'
+        extport: '4245'
         image: 'linuxserver/dokuwiki'
 
     - name: 'Including cron job'
