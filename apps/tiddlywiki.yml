@@ -15,7 +15,7 @@
       set_fact:
         pgrole: 'tiddlywiki'
         intport: '8080'
-        extport: '8282'
+        extport: '8383'
         image: 'elasticdog/tiddlywiki'
 
     - name: 'Including cron job'
