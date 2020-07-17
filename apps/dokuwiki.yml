@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Title:      DocuWiki (Reference Title File)
+# Title:      DokuWiki (Reference Title File)
 # Author(s):  Navy2x
 # URL:        https://pgblitz.com - http://github.pgblitz.com
 # GNU:        General Public License v3.0
@@ -13,10 +13,10 @@
 
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: 'docuwiki'
+        pgrole: 'dokuwiki'
         intport: '4245'
         extport: '443'
-        image: 'linuxserver/docuwiki'
+        image: 'linuxserver/dokuwiki'
 
     - name: 'Including cron job'
       include_tasks: '/opt/communityapps/apps/_core.yml'
