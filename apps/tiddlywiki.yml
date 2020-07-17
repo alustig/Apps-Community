@@ -13,7 +13,7 @@
 
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: 'dokuwiki'
+        pgrole: 'tiddlywiki'
         intport: '8080'
         extport: '8282'
         image: 'elasticdog/tiddlywiki'
