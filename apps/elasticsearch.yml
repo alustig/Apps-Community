@@ -16,7 +16,7 @@
         pgrole: 'elasticsearch'
         intport: '9200'
         extport: '9200'
-        image: 'linuxserver/dokuwiki'
+        image: 'docker.elastic.co/elasticsearch/elasticsearch:7.8.0'
 
     - name: 'Including cron job'
       include_tasks: '/opt/communityapps/apps/_core.yml'
