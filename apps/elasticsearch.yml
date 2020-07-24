@@ -38,8 +38,6 @@
       set_fact:
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
-          - '{{path.stdout}}:{{path.stdout}}'
-          - '/tank/appdata/{{pgrole}}:/usr/share/elasticsearch/config'
           
     - name: 'Setting PG ENV'
       set_fact:
